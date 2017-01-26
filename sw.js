@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/index.html","d8fe3861ec5999a0c3998f074862bd6f"],["/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/static/js/main.301c85be.js","a46ce14c2a8887919c2bf6678eb97930"]];
+var precacheConfig = [["/index.html","244511d3e7a5e2428f7c0a50020f1657"],["/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/static/js/main.d21005aa.js","45630838ca4c9fabac8302210ee93bf1"]];
 var cacheName = 'sw-precache-v2-ez-money-' + (self.registration ? self.registration.scope : '');
 
 
