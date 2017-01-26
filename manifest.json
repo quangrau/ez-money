@@ -3,7 +3,7 @@
   "name": "Ez-Money",
   "short_name": "Ez-Money",
   "default_locale": "en",
-  "description": "Exchange money",
+  "description": "Currency exchange money for traveler",
   "icons": [
     {
       "src": "icon-152x152.png",
