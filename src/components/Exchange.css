@@ -1,0 +1,40 @@
+.Exchange {
+}
+
+.Exchange-info {
+  text-align: left;
+}
+
+.Exchange-row {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.Exchange-row .select {
+  width: 70px;
+}
+.Exchange-row .input {
+  display: inline-block;
+  flex: 1;
+}
+
+.input {
+  border: 1px solid #EEE;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin: 0;
+  height: 34px;
+  width: 100px;
+  font-size: 1em;
+  color: #444444;
+}
+
+.select {
+  border: 1px solid #EEE;
+  border-radius: 4px;
+  height: 34px;
+  font-size: 1em;
+  color: #444444;
+  margin-right: 8px;
+}
+
