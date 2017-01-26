@@ -13,6 +13,7 @@
     "react-number-format": "^1.0.2"
   },
   "scripts": {
+    "deploy": "git subtree push --prefix build origin gh-pages",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
