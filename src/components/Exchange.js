@@ -21,8 +21,8 @@ class Exchange extends Component {
 
   state = {
     timestamp: new Date(),
-    amount: 0,
-    convertAmount: 0,
+    amount: '',
+    convertAmount: '',
     from: 'SGD',
     to: 'VND',
   }
@@ -96,6 +96,7 @@ class Exchange extends Component {
             ref={input => this.fromInput = input}
             className="input"
             thousandSeparator=","
+            placeholder="0"
             value={this.state.amount}
             onChange={this.handleAmountChange}
           />
