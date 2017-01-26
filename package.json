@@ -2,6 +2,7 @@
   "name": "ez-money",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://quangrau.github.io/ez-money",
   "devDependencies": {
     "react-scripts": "0.8.5"
   },
