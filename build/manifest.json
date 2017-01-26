@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "name": "Ez-Money",
+  "short_name": "Ez-Money",
+  "default_locale": "en",
+  "description": "Exchange money",
+  "icons": [
+    {
+      "src": "icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "author": "QuangRau",
+  "theme_color": "#91BF2D",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "home_page": "/"
+}
+
