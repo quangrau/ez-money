@@ -1,6 +1,6 @@
 import './Exchange.css';
 import fx from 'money';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import NumberFormat from 'react-number-format';
 import ContryList from './ContryList';
 

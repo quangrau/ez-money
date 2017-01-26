@@ -3,6 +3,9 @@
 
 .Exchange-info {
   text-align: left;
+  margin-bottom: 2em;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .Exchange-row {
