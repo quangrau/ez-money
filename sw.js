@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/ez-money/index.html","a5bfba5ad51203af2d088149a4ebed5d"],["/ez-money/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/ez-money/static/js/main.00f79c08.js","2b9f7e671e8f5b5c2bbbbb8235714fc5"]];
+var precacheConfig = [["/ez-money/index.html","ded31965d2a0f598a744e9b78e0468ee"],["/ez-money/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/ez-money/static/js/main.7a986e35.js","00b97156755aaae792941bb588a813ca"]];
 var cacheName = 'sw-precache-v2-ez-money-' + (self.registration ? self.registration.scope : '');
 
 
