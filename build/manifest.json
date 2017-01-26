@@ -6,17 +6,17 @@
   "description": "Currency exchange money for traveler",
   "icons": [
     {
-      "src": "/ez-money/icon-152x152.png",
+      "src": "/ez-money/icon-152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/ez-money/icon-192x192.png",
+      "src": "/ez-money/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/ez-money/icon-256x256.png",
+      "src": "/ez-money/icon-256.png",
       "sizes": "256x256",
       "type": "image/png"
     }
