@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "http://quangrau.github.io/ez-money",
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "sw-precache": "^4.3.0"
   },
   "dependencies": {
     "money": "^0.2.0",
@@ -14,8 +15,9 @@
   },
   "scripts": {
     "deploy": "git subtree push --prefix build origin gh-pages",
+    "build-sw": "sw-precache --config=sw-precache-config.json --verbose --sw-file=build/sw.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run build-sw",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

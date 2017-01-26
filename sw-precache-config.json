@@ -1,0 +1,14 @@
+{
+  "cacheId": "ez-money",
+  "staticFileGlobs": [
+    "build/**.html",
+    "build/static/js/**.js",
+    "build/static/css/**.css"
+  ],
+  "stripPrefix": "build",
+  "runtimeCaching": [{
+    "urlPattern": "/https:\\/\\/openexchangerates\\.org\\/api/",
+    "handler": "networkFirst"
+  }]
+}
+
