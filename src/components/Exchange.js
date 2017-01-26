@@ -9,28 +9,51 @@ fx.settings = {
   from: 'SGD',
 };
 fx.rates = {
-  MYR: 4.4315,
-  PHP: 49.638,
-  SGD: 1.4184,
-  THB: 35.23,
-  EUR: 0.93084,
-  VND: 22592.50,
+  MYR: 4.43292,
+  PHP: 49.817,
+  SGD: 1.423802,
+  THB: 35.29,
+  EUR: 0.935778,
+  VND: 22592.733333,
 }
 
 class Exchange extends Component {
 
   state = {
+    timestamp: new Date(),
     amount: 0,
     convertAmount: 0,
     from: 'SGD',
     to: 'VND',
   }
 
+  componentDidMount() {
+    if(self.fetch) {
+      fetch('https://openexchangerates.org/api/latest.json?app_id=40982787bb7a4a1999fb5be0e6345ec7')
+        .then(response => {
+          const contentType = response.headers.get('content-type');
+          if(contentType && contentType.indexOf("application/json") !== -1) {
+            return response.json().then(this.updateRates);
+          }
+        })
+        .catch(err => console.log(err));
+    } else {
+      // TODO: do something with XMLHttpRequest?
+    }
+  }
+
+  updateRates = (data) => {
+    if (data.rates) {
+      fx.rates = data.rates;
+      this.setState({ timestamp: data.timestamp * 1000 });
+    }
+  }
+
   handleAmountChange = (e, value) => {
     const { from, to } = this.state;
     const amount = parseInt(value, 0) || 0;
     const convertAmount = fx(amount).from(from).to(to);
-    console.log(from, to, convertAmount);
+    // console.log(from, to, convertAmount);
     this.setState({ amount, convertAmount: Math.floor(convertAmount) });
   }
 
@@ -51,7 +74,8 @@ class Exchange extends Component {
   }
 
   render() {
-    const { from, to } = this.state;
+    const { from, to, timestamp } = this.state;
+    const lastUpdated = new Date(timestamp);
 
     return (
       <div className="Exchange">
@@ -59,6 +83,9 @@ class Exchange extends Component {
           <div>USD: $1</div>
           <div>{from}: {fx.rates[from]}</div>
           <div>{to}: {fx.rates[to]}</div>
+          <div className="small">
+            Last updated: {lastUpdated.toLocaleDateString()} {lastUpdated.toLocaleTimeString()}
+          </div>
         </div>
         <div className="Exchange-row">
           <ContryList
