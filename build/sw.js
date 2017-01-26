@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/index.html","a5bfba5ad51203af2d088149a4ebed5d"],["/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/static/js/main.00f79c08.js","2b9f7e671e8f5b5c2bbbbb8235714fc5"]];
+var precacheConfig = [["/ez-money/index.html","a5bfba5ad51203af2d088149a4ebed5d"],["/ez-money/static/css/main.1f61fe95.css","4494c7c502461ddf6642db26062f3307"],["/ez-money/static/js/main.00f79c08.js","2b9f7e671e8f5b5c2bbbbb8235714fc5"]];
 var cacheName = 'sw-precache-v2-ez-money-' + (self.registration ? self.registration.scope : '');
 
 
@@ -143,10 +143,10 @@ self.addEventListener('install', function(event) {
         );
       });
     }).then(function() {
-      
+
       // Force the SW to transition from installing -> active state
       return self.skipWaiting();
-      
+
     })
   );
 });
@@ -166,9 +166,9 @@ self.addEventListener('activate', function(event) {
         );
       });
     }).then(function() {
-      
+
       return self.clients.claim();
-      
+
     })
   );
 });
@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
 
 // *** Start of auto-included sw-toolbox code. ***
-/* 
+/*
  Copyright 2016 Google Inc. All Rights Reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
